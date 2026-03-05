@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A5BF5F8F20B8A731004CA217"
-               BuildableName = "LipikaEngine_OSX.framework"
-               BlueprintName = "LipikaEngine_OSX"
+               BuildableName = "LipikaEngine.framework"
+               BlueprintName = "LipikaEngine"
                ReferencedContainer = "container:LipikaEngine.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -31,8 +31,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A5BF5F8F20B8A731004CA217"
-            BuildableName = "LipikaEngine_OSX.framework"
-            BlueprintName = "LipikaEngine_OSX"
+            BuildableName = "LipikaEngine.framework"
+            BlueprintName = "LipikaEngine"
             ReferencedContainer = "container:LipikaEngine.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -41,7 +41,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A5C77CC41ECBAC1E008AE60D"
+               BlueprintIdentifier = "A50BAD832F598E0200B76A87"
                BuildableName = "LipikaEngineTests.xctest"
                BlueprintName = "LipikaEngineTests"
                ReferencedContainer = "container:LipikaEngine.xcodeproj">
@@ -63,8 +63,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A5BF5F8F20B8A731004CA217"
-            BuildableName = "LipikaEngine_OSX.framework"
-            BlueprintName = "LipikaEngine_OSX"
+            BuildableName = "LipikaEngine.framework"
+            BlueprintName = "LipikaEngine"
             ReferencedContainer = "container:LipikaEngine.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,8 +79,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A5BF5F8F20B8A731004CA217"
-            BuildableName = "LipikaEngine_OSX.framework"
-            BlueprintName = "LipikaEngine_OSX"
+            BuildableName = "LipikaEngine.framework"
+            BlueprintName = "LipikaEngine"
             ReferencedContainer = "container:LipikaEngine.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

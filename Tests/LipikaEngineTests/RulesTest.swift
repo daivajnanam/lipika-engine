@@ -8,7 +8,7 @@
  */
 
 import XCTest
-@testable import LipikaEngine_OSX
+@testable import LipikaEngine
 
 class RulesTests: XCTestCase {
     var rules: Rules?

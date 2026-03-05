@@ -7,5 +7,7 @@ xcuserdata
 *.pkg
 profile
 *~.nib
-/build
+build
 installer
+.build
+.swiftpm
