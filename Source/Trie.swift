@@ -16,8 +16,8 @@ class Trie<Key: RangeReplaceableCollection, Value: CustomStringConvertible> wher
     private var next = [Key.Element: Trie]()
     private weak var _parent: Trie?
     private weak var _root: Trie?
-    private (set) var keyElement: Key.Element?
-    private (set) var value: Value?
+    private(set) var keyElement: Key.Element?
+    private(set) var value: Value?
     var parent: Trie { return _parent == nil ? self : _parent! }
     var root: Trie { return _root == nil ? self : _root! }
     var isRoot: Bool { return _parent == nil }

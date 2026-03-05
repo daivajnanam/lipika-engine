@@ -46,8 +46,8 @@ class RuleOutput: CustomStringConvertible {
 }
 
 class RuleInput: Hashable, CustomStringConvertible {
-    private (set) var type: String
-    private (set) var key: String?
+    private(set) var type: String
+    private(set) var key: String?
 
     var description: String {
         return key == nil ? type : "\(type)/\(key!)"
@@ -75,9 +75,9 @@ class RuleInput: Hashable, CustomStringConvertible {
 }
 
 class MappingOutput {
-    private (set) var type: String
-    private (set) var key: String
-    private (set) var output: String?
+    private(set) var type: String
+    private(set) var key: String
+    private(set) var output: String?
     var ruleInput: RuleInput { return RuleInput(type: type, key: key) }
     
     var description: String {
@@ -105,8 +105,8 @@ class Rules {
     private let kSpecificValuePattern: RegEx
     private let kMapStringSubPattern: RegEx
 
-    private (set) var rulesTrie = Trie<[RuleInput], RuleOutput>()
-    private (set) var mappingTrie = MappingTrie()
+    private(set) var rulesTrie = Trie<[RuleInput], RuleOutput>()
+    private(set) var mappingTrie = MappingTrie()
 
     init(imeRules: [String], mappings: [String: MappingValue], isReverse: Bool = false) throws {
         kSpecificValuePattern = try RegEx(pattern: "[\\{\\[]([^\\{\\[]+/[^\\{\\[]+)[\\}\\]]")

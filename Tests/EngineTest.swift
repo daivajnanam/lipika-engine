@@ -237,4 +237,27 @@ class EngineTest: XCTestCase {
         XCTAssertEqual(r4?[1].output, "ऋ")
         XCTAssertEqual(r4?[1].isPreviousFinal, false)
     }
+    
+    func testAutoHalantaTripleConsonant() throws {
+        let r1 = engine?.execute(input: "t")
+        XCTAssertEqual(r1?[0].input, "t")
+        XCTAssertEqual(r1?[0].output, "त")
+        XCTAssertEqual(r1?[0].isPreviousFinal, false)
+        let r2 = engine?.execute(input: "a")
+        XCTAssertEqual(r2?[0].input, "ta")
+        XCTAssertEqual(r2?[0].output, "त")
+        XCTAssertEqual(r2?[0].isPreviousFinal, false)
+        let r3 = engine?.execute(input: "n")
+        XCTAssertEqual(r3?[1].input, "n")
+        XCTAssertEqual(r3?[1].output, "न")
+        XCTAssertEqual(r3?[1].isPreviousFinal, false)
+        let r4 = engine?.execute(input: "t")
+        XCTAssertEqual(r4?[1].input, "nt")
+        XCTAssertEqual(r4?[1].output, "न्त")
+        XCTAssertEqual(r4?[1].isPreviousFinal, false)
+        let r5 = engine?.execute(input: "r")
+        XCTAssertEqual(r5?[1].input, "ntr")
+        XCTAssertEqual(r5?[1].output, "न्त्र")
+        XCTAssertEqual(r5?[1].isPreviousFinal, false)
+    }
 }
