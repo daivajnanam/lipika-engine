@@ -1,4 +1,4 @@
-// swift-tools-version: 5.3
+// swift-tools-version:5.11
 
 import PackageDescription
 
@@ -16,11 +16,20 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "LipikaEngine"
+            name: "LipikaEngine",
+            dependencies: [],
+            exclude: ["Info.plist"],
+            resources: [
+                .copy("../../Mapping")
+            ]
         ),
         .testTarget(
             name: "LipikaEngineTests",
-            dependencies: ["LipikaEngine"]
+            dependencies: ["LipikaEngine"],
+            resources: [
+                .copy("../../Mapping"),
+                .copy("../../TestMapping")
+            ]
         ),
     ]
 )
